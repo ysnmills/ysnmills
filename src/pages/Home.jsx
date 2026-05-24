@@ -125,7 +125,11 @@ export default function Home() {
       {/* ── Travels Banner ── */}
       <section className="travels-banner-section">
         <div className="travels-banner-img-col">
-          <img src="/images/bus_angle.png" alt="Sri Lakshmi Travels bus" className="travels-banner-bus-img" />
+          <img
+            src={`${import.meta.env.BASE_URL}images/bus_angle.png`}
+            alt="Sri Lakshmi Travels bus"
+            className="travels-banner-bus-img"
+          />
         </div>
         <div className="travels-banner-content">
           <span className="travels-banner-badge">🚌 New Service</span>
@@ -156,7 +160,7 @@ export default function Home() {
 
             <div className="about-intro-img">
               <img
-                src="/images/shop/shop_entrnce.webp"
+                src={`${import.meta.env.BASE_URL}images/shop/shop_entrnce.webp`}
                 alt="Sri Lakshmi Flour & Oil Mill shop"
                 style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px', display: 'block' }}
               />
